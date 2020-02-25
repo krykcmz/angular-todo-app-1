@@ -20,7 +20,7 @@ describe('TodoListItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TodoListItemComponent);
     component = fixture.componentInstance;
-    component.todo = new Todo({ id: 1, title: 'Test', complete: false });
+    component.todo = new Todo({ id: 1, title: 'Test' });
     fixture.detectChanges();
   });
 

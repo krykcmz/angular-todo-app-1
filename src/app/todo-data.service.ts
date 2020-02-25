@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Todo } from './todo';
-import { ApiService } from './api.service';
+import { ApiMockService } from './api-mock.service';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class TodoDataService {
 
   constructor(
-    private api: ApiService
+    private api: ApiMockService
   ) {
   }
 
@@ -34,12 +34,6 @@ export class TodoDataService {
   // Simulate GET /todos/:id
   getTodoById(todoId: number): Observable<Todo> {
     return this.api.getTodoById(todoId);
-  }
-
-  // Toggle complete
-  toggleTodoComplete(todo: Todo) {
-    todo.complete = !todo.complete;
-    return this.api.updateTodo(todo);
   }
 
 }

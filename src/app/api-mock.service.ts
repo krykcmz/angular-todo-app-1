@@ -12,13 +12,14 @@ export class ApiMockService {
 
   public getAllTodos(): Observable<Todo[]> {
     return Observable.of([
-      new Todo({id: 1, title: 'Read article', complete: false})
+      new Todo({id: 1, title: 'todo 1', complete: false})
     ]);
   }
 
   public createTodo(todo: Todo): Observable<Todo> {
+    todo.id = Math.floor((Math.random() * 10000000) + 2);
     return Observable.of(
-      new Todo({id: 1, title: 'Read article', complete: false})
+      todo
     );
   }
 
@@ -34,7 +35,9 @@ export class ApiMockService {
     );
   }
 
-  public deleteTodoById(todoId: number): Observable<null> {
-    return null;
+  public deleteTodoById(todoId: number): Observable<any> {
+    return Observable.of(
+      new Todo({id: 1, title: 'Read article', complete: false})
+    );
   }
 }

@@ -37,16 +37,6 @@ export class AppComponent implements OnInit {
       );
   }
 
-  onToggleTodoComplete(todo) {
-    this.todoDataService
-      .toggleTodoComplete(todo)
-      .subscribe(
-        (updatedTodo) => {
-          todo = updatedTodo;
-        }
-      );
-  }
-
   onRemoveTodo(todo) {
     this.todoDataService
       .deleteTodoById(todo.id)
