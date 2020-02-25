@@ -12,17 +12,17 @@ export class TodoDataService {
   }
 
   // Simulate POST /todos
-  addTodo(todo: Todo): Observable<Todo> {
+  addTodo(todo: Todo): Observable<Todo[]> {
     return this.api.createTodo(todo);
   }
 
   // Simulate DELETE /todos/:id
-  deleteTodoById(todoId: number): Observable<Todo> {
+  deleteTodoById(todoId: number): Observable<Todo[]> {
     return this.api.deleteTodoById(todoId);
   }
 
   // Simulate PUT /todos/:id
-  updateTodo(todo: Todo): Observable<Todo> {
+  updateTodo(todo: Todo): Observable<Todo[]> {
     return this.api.updateTodo(todo);
   }
 
