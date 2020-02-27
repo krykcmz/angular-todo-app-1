@@ -6,7 +6,7 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class ApiMockService {
 
-  todos: Todo[] = [new Todo({id: 1, title: 'todo 1', complete: false})];
+  todos: Todo[] = [new Todo({id: 1, title: 'todo 1'})];
 
   constructor(
   ) {
