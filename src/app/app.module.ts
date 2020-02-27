@@ -8,7 +8,6 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoListFooterComponent } from './todo-list-footer/todo-list-footer.component';
 import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
 import { TodoDataService } from './todo-data.service';
-import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
 import { ApiService } from './api.service';
 import { ApiMockService } from './api-mock.service';
 
@@ -17,8 +16,7 @@ import { ApiMockService } from './api-mock.service';
     AppComponent,
     TodoListComponent,
     TodoListFooterComponent,
-    TodoListHeaderComponent,
-    TodoListItemComponent
+    TodoListHeaderComponent
   ],
   imports: [
     BrowserModule,

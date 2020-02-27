@@ -19,7 +19,7 @@ export class TodoListComponent {
   constructor() {
   }
 
-  onRemoveTodo(todo: Todo) {
+  removeTodo(todo: Todo) {
     this.remove.emit(todo);
   }
 
